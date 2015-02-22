@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>My Color Themes</title>
+      <!-- Character set for English and similar languages -->
+      <meta charset="UTF-8">
+      <style type="text/css">
+
+
+      * {
+          /* Eliminate default margins and padding on all element types */
+          margin:0;
+          padding:0;
+          /* Box sizing for older browsers */
+          -ms-box-sizing: border-box; /* IE */
+          -moz-box-sizing: border-box; /* Firefox */
+          -webkit-box-sizing: border-box; /* Chrome, Safari */
+          -o-box-sizing: border-box; /* Opera */
+
+          box-sizing: border-box;
+        }
+
+        #wrapper {
+          width: 100%;
+          min-width: 500px;
+          text-align: center;
+        }
+
+        h1, h2, h3 {
+          margin: 1em 0 0 0;
+        }
+
+        ul {
+          margin: 1em 0 0 0;
+          list-style-type: none;
+        }
+
+        li {
+          width:12%;
+          height: 12em;
+          padding: 1em;
+          display: inline-block;
+        }
+
+        .image-li {
+          width: 30%;
+        }
+
+      </style>
+
+      <script type="text/javascript">
+        toggleTextColor = function() {
+          if (this.color === '#000') {
+            this.color = '#fff'
+          } else {
+            this.color = '#000'
+          }
+        }
+      </script>
+
+    </head>
+    <body>
+      <div id="wrapper">
+        <h1>Color Themes From Images by:</h1>
+        <h2><a href="https://color.adobe.com/create/color-wheel/" target="_blank">Adobe Kuler</a></h2>
+        <h3>Bright color theme for 015_13A-cropped.JPG</h3>
+        <ul>
+          <li class="image-li" style="background: center center/cover no-repeat url(images/015_13A-cropped.JPG)">&nbsp;</li>
+          <li title="#B0C2D9" style="background: #B0C2D9"><span class="color-text" onclick="toggleTextColor();">#B0C2D9</span></li>
+          <li title="#305173" style="background: #305173"><span class="color-text" onclick="toggleTextColor(this);">#305173</span></li></li>
+          <li title="#386173" style="background: #386173"><span class="color-text" onclick="toggleTextColor(this);">#386173</span></li></li>
+          <li title="#4F5731" style="background: #4F5731"><span class="color-text" onclick="toggleTextColor(this);">#4F5731</span></li></li>
+          <li title="#6D734D" style="background: #6D734D"><span class="color-text" onclick="toggleTextColor(this);">#6D734D</span></li></li>
+        </ul>
+
+      </div><!-- end wrapper div -->
+    </body>
+
+  </html>
